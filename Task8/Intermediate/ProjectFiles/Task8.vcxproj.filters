@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Task8.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Task8.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Task8Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Task8">
+      <UniqueIdentifier>{035E1182-631B-3C1C-ABCA-CF754EC4878E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Task8\Task8.Build.cs">
+      <Filter>Source\Task8</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Task8\Task8.cpp">
+      <Filter>Source\Task8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Task8.h">
+      <Filter>Source\Task8</Filter>
+    </ClCompile>
+    <Filter Include="Source\Task8\Private">
+      <UniqueIdentifier>{B94DDF46-B24B-36DC-A4EA-EB6C9F73A092}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Task8\Private\BaseItem.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\BigCoinItem.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\CoinItem.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\HealingItem.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\ItemInterface.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\MineItem.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\SmallCoinItem.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\SpartaCharacter.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\SpartaGameMode.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\SpartaPlayerController.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Task8\Public">
+      <UniqueIdentifier>{D806D099-9075-3002-9D27-39EEF252BBCF}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Task8\Public\BaseItem.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\BigCoinItem.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\CoinItem.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\HealingItem.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\ItemInterface.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\MineItem.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\SmallCoinItem.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\SpartaCharacter.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\SpartaGameMode.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\SpartaPlayerController.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

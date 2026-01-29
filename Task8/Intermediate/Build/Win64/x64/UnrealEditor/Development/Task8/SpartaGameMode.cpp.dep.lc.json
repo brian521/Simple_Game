@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\source\\task8\\private\\spartagamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\x64\\task8editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\task8\\definitions.task8.h",
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\source\\task8\\public\\spartagamemode.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemode.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemode.generated.h",
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\unrealeditor\\inc\\task8\\uht\\spartagamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
