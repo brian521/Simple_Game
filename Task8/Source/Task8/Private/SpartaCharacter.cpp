@@ -51,7 +51,6 @@ ASpartaCharacter::ASpartaCharacter()
 void ASpartaCharacter::BeginPlay()
 {
     Super::BeginPlay();
-    UpdateOverheadHP();
 }
 
 int32 ASpartaCharacter::GetHealth() const
@@ -59,10 +58,14 @@ int32 ASpartaCharacter::GetHealth() const
     return Health;
 }
 
+int32 ASpartaCharacter::GetMaxHealth() const
+{
+    return MaxHealth;
+}
+
 void ASpartaCharacter::AddHealth(float Amount)
 {
     Health = FMath::Clamp(Health + Amount, 0.0f, MaxHealth);
-    UpdateOverheadHP();
 }
 
 void ASpartaCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -151,7 +154,6 @@ float ASpartaCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Damag
     float ActualDamage = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 
     Health = FMath::Clamp(Health - DamageAmount, 0.0f, MaxHealth);
-    UpdateOverheadHP();
 
     if (Health <= 0.0f)
     {
@@ -219,18 +221,5 @@ void ASpartaCharacter::StopSprint(const FInputActionValue& value)
     if (GetCharacterMovement())
     {
         GetCharacterMovement()->MaxWalkSpeed = NormalSpeed;
-    }
-}
-
-void ASpartaCharacter::UpdateOverheadHP()
-{
-    if (!OverheadWidget) return;
-
-    UUserWidget* OverheadWidgetInstance = OverheadWidget->GetUserWidgetObject();
-    if (!OverheadWidgetInstance) return;
-
-    if (UTextBlock* HPText = Cast<UTextBlock>(OverheadWidgetInstance->GetWidgetFromName(TEXT("OverHeadHP"))))
-    {
-        HPText->SetText(FText::FromString(FString::Printf(TEXT("%.0f / %.0f"), Health, MaxHealth)));
     }
 }

@@ -31,6 +31,9 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Health")
 	int32 GetHealth() const;
 
+	UFUNCTION(BlueprintPure, Category = "Health")
+	int32 GetMaxHealth() const;
+	
 	UFUNCTION(BlueprintCallable, Category = "Health")
 	void AddHealth(float Amount);
 
@@ -45,7 +48,6 @@ protected:
 	float Health;
 	UFUNCTION(BlueprintCallable, Category = "Health")
 	virtual void OnDeath();
-	void UpdateOverheadHP();
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 

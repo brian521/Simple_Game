@@ -24,6 +24,7 @@ struct FInputActionValue;
 	DECLARE_FUNCTION(execMove); \
 	DECLARE_FUNCTION(execOnDeath); \
 	DECLARE_FUNCTION(execAddHealth); \
+	DECLARE_FUNCTION(execGetMaxHealth); \
 	DECLARE_FUNCTION(execGetHealth);
 
 

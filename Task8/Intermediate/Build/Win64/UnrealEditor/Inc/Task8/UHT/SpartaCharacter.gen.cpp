@@ -106,6 +106,48 @@ DEFINE_FUNCTION(ASpartaCharacter::execGetHealth)
 }
 // End Class ASpartaCharacter Function GetHealth
 
+// Begin Class ASpartaCharacter Function GetMaxHealth
+struct Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics
+{
+	struct SpartaCharacter_eventGetMaxHealth_Parms
+	{
+		int32 ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+		{ "ModuleRelativePath", "Public/SpartaCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SpartaCharacter_eventGetMaxHealth_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASpartaCharacter, nullptr, "GetMaxHealth", nullptr, nullptr, Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::SpartaCharacter_eventGetMaxHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::SpartaCharacter_eventGetMaxHealth_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ASpartaCharacter::execGetMaxHealth)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetMaxHealth();
+	P_NATIVE_END;
+}
+// End Class ASpartaCharacter Function GetMaxHealth
+
 // Begin Class ASpartaCharacter Function Look
 struct Z_Construct_UFunction_ASpartaCharacter_Look_Statics
 {
@@ -413,6 +455,7 @@ void ASpartaCharacter::StaticRegisterNativesASpartaCharacter()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AddHealth", &ASpartaCharacter::execAddHealth },
 		{ "GetHealth", &ASpartaCharacter::execGetHealth },
+		{ "GetMaxHealth", &ASpartaCharacter::execGetMaxHealth },
 		{ "Look", &ASpartaCharacter::execLook },
 		{ "Move", &ASpartaCharacter::execMove },
 		{ "OnDeath", &ASpartaCharacter::execOnDeath },
@@ -482,6 +525,7 @@ struct Z_Construct_UClass_ASpartaCharacter_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ASpartaCharacter_AddHealth, "AddHealth" }, // 3580956541
 		{ &Z_Construct_UFunction_ASpartaCharacter_GetHealth, "GetHealth" }, // 3902533272
+		{ &Z_Construct_UFunction_ASpartaCharacter_GetMaxHealth, "GetMaxHealth" }, // 4214520952
 		{ &Z_Construct_UFunction_ASpartaCharacter_Look, "Look" }, // 1680129857
 		{ &Z_Construct_UFunction_ASpartaCharacter_Move, "Move" }, // 1866282562
 		{ &Z_Construct_UFunction_ASpartaCharacter_OnDeath, "OnDeath" }, // 349503244
@@ -549,10 +593,10 @@ ASpartaCharacter::~ASpartaCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpartaCharacter, ASpartaCharacter::StaticClass, TEXT("ASpartaCharacter"), &Z_Registration_Info_UClass_ASpartaCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpartaCharacter), 3261825047U) },
+		{ Z_Construct_UClass_ASpartaCharacter, ASpartaCharacter::StaticClass, TEXT("ASpartaCharacter"), &Z_Registration_Info_UClass_ASpartaCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpartaCharacter), 947732749U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_4132134017(TEXT("/Script/Task8"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_3518480740(TEXT("/Script/Task8"),
 	Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

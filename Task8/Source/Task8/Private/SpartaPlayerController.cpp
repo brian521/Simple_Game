@@ -91,6 +91,18 @@ void ASpartaPlayerController::ShowMainMenu(bool bIsRestart)
             }
         }
 
+        if (UTextBlock* ButtonText = Cast<UTextBlock>(MainMenuWidgetInstance->GetWidgetFromName(TEXT("ExitButtonText"))))
+        {
+            if (bIsRestart)
+            {
+                ButtonText->SetText(FText::FromString(TEXT("MainMenu")));
+            }
+            else
+            {
+                ButtonText->SetText(FText::FromString(TEXT("Exit")));
+            }
+        }
+
         if (bIsRestart)
         {
             UFunction* PlayAnimFunc = MainMenuWidgetInstance->FindFunction(FName("PlayGameOverAnim"));
