@@ -84,6 +84,9 @@
     <ClCompile Include="..\..\Source\Task8\Private\SpawnVolume.cpp">
       <Filter>Source\Task8\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\WaveDataRow.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Task8\Public">
       <UniqueIdentifier>{D806D099-9075-3002-9D27-39EEF252BBCF}</UniqueIdentifier>
     </Filter>
@@ -127,6 +130,9 @@
       <Filter>Source\Task8\Public</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Task8\Public\SpawnVolume.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\WaveDataRow.h">
       <Filter>Source\Task8\Public</Filter>
     </ClCompile>
   </ItemGroup>

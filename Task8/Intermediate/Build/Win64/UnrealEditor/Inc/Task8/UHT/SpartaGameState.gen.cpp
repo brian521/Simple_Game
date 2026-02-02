@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeSpartaGameState() {}
 
 // Begin Cross Module References
 ENGINE_API UClass* Z_Construct_UClass_AGameState();
+ENGINE_API UClass* Z_Construct_UClass_UDataTable_NoRegister();
 TASK8_API UClass* Z_Construct_UClass_ASpartaGameState();
 TASK8_API UClass* Z_Construct_UClass_ASpartaGameState_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Task8();
@@ -157,9 +158,6 @@ struct Z_Construct_UClass_ASpartaGameState_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
-#endif
 		{ "HideCategories", "Input Movement Collision Rendering HLOD WorldPartition DataLayers Transformation" },
 		{ "IncludePath", "SpartaGameState.h" },
 		{ "ModuleRelativePath", "Public/SpartaGameState.h" },
@@ -189,7 +187,7 @@ struct Z_Construct_UClass_ASpartaGameState_Statics
 		{ "ToolTip", "\xed\x94\x8c\xeb\xa0\x88\xec\x9d\xb4\xec\x96\xb4\xea\xb0\x80 \xec\x88\x98\xec\xa7\x91\xed\x95\x9c \xec\xbd\x94\xec\x9d\xb8 \xea\xb0\x9c\xec\x88\x98" },
 #endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LevelDuration_MetaData[] = {
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WaveDuration_MetaData[] = {
 		{ "Category", "Level" },
 #if !UE_BUILD_SHIPPING
 		{ "Comment", "// \xea\xb0\x81 \xeb\xa0\x88\xeb\xb2\xa8\xec\x9d\xb4 \xec\x9c\xa0\xec\xa7\x80\xeb\x90\x98\xeb\x8a\x94 \xec\x8b\x9c\xea\xb0\x84 (\xec\xb4\x88 \xeb\x8b\xa8\xec\x9c\x84)\n" },
@@ -229,15 +227,30 @@ struct Z_Construct_UClass_ASpartaGameState_Statics
 		{ "ToolTip", "\xec\x8b\xa4\xec\xa0\x9c \xeb\xa0\x88\xeb\xb2\xa8 \xeb\xa7\xb5 \xec\x9d\xb4\xeb\xa6\x84 \xeb\xb0\xb0\xec\x97\xb4. \xec\x97\xac\xea\xb8\xb0 \xec\x9e\x88\xeb\x8a\x94 \xec\x9d\xb8\xeb\x8d\xb1\xec\x8a\xa4\xeb\xa5\xbc \xec\xb0\xa8\xeb\xa1\x80\xeb\x8c\x80\xeb\xa1\x9c \xec\x97\xb0\xeb\x8f\x99" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentWaveIndex_MetaData[] = {
+		{ "Category", "Level|Wave" },
+		{ "ModuleRelativePath", "Public/SpartaGameState.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxWaves_MetaData[] = {
+		{ "Category", "Level|Wave" },
+		{ "ModuleRelativePath", "Public/SpartaGameState.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WaveDataTable_MetaData[] = {
+		{ "Category", "Level|Wave" },
+		{ "ModuleRelativePath", "Public/SpartaGameState.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Score;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_SpawnedCoinCount;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_CollectedCoinCount;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_LevelDuration;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_WaveDuration;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_CurrentLevelIndex;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxLevels;
 	static const UECodeGen_Private::FNamePropertyParams NewProp_LevelMapNames_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_LevelMapNames;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_CurrentWaveIndex;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxWaves;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WaveDataTable;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -254,20 +267,26 @@ struct Z_Construct_UClass_ASpartaGameState_Statics
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_Score = { "Score", nullptr, (EPropertyFlags)0x0010000000020005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, Score), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Score_MetaData), NewProp_Score_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_SpawnedCoinCount = { "SpawnedCoinCount", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, SpawnedCoinCount), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnedCoinCount_MetaData), NewProp_SpawnedCoinCount_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_CollectedCoinCount = { "CollectedCoinCount", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, CollectedCoinCount), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CollectedCoinCount_MetaData), NewProp_CollectedCoinCount_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_LevelDuration = { "LevelDuration", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, LevelDuration), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LevelDuration_MetaData), NewProp_LevelDuration_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_WaveDuration = { "WaveDuration", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, WaveDuration), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WaveDuration_MetaData), NewProp_WaveDuration_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_CurrentLevelIndex = { "CurrentLevelIndex", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, CurrentLevelIndex), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentLevelIndex_MetaData), NewProp_CurrentLevelIndex_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_MaxLevels = { "MaxLevels", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, MaxLevels), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxLevels_MetaData), NewProp_MaxLevels_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_LevelMapNames_Inner = { "LevelMapNames", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_LevelMapNames = { "LevelMapNames", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, LevelMapNames), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LevelMapNames_MetaData), NewProp_LevelMapNames_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_CurrentWaveIndex = { "CurrentWaveIndex", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, CurrentWaveIndex), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentWaveIndex_MetaData), NewProp_CurrentWaveIndex_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_MaxWaves = { "MaxWaves", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, MaxWaves), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxWaves_MetaData), NewProp_MaxWaves_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpartaGameState_Statics::NewProp_WaveDataTable = { "WaveDataTable", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaGameState, WaveDataTable), Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WaveDataTable_MetaData), NewProp_WaveDataTable_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpartaGameState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_Score,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_SpawnedCoinCount,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_CollectedCoinCount,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_LevelDuration,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_WaveDuration,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_CurrentLevelIndex,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_MaxLevels,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_LevelMapNames_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_LevelMapNames,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_CurrentWaveIndex,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_MaxWaves,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaGameState_Statics::NewProp_WaveDataTable,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASpartaGameState_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ASpartaGameState_Statics::DependentSingletons[])() = {
@@ -310,10 +329,10 @@ ASpartaGameState::~ASpartaGameState() {}
 struct Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaGameState_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpartaGameState, ASpartaGameState::StaticClass, TEXT("ASpartaGameState"), &Z_Registration_Info_UClass_ASpartaGameState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpartaGameState), 2962675664U) },
+		{ Z_Construct_UClass_ASpartaGameState, ASpartaGameState::StaticClass, TEXT("ASpartaGameState"), &Z_Registration_Info_UClass_ASpartaGameState, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpartaGameState), 1694192949U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaGameState_h_3173462678(TEXT("/Script/Task8"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaGameState_h_3722010805(TEXT("/Script/Task8"),
 	Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaGameState_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaGameState_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

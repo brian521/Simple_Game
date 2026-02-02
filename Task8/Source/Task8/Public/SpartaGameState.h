@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameState.h"
+#include "WaveDataRow.h"
 #include "SpartaGameState.generated.h"
 
 UCLASS()
@@ -26,7 +27,7 @@ public:
 	int32 CollectedCoinCount;
 	// 각 레벨이 유지되는 시간 (초 단위)
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Level")
-	float LevelDuration;
+	float WaveDuration;
 	// 현재 진행 중인 레벨 인덱스
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Level")
 	int32 CurrentLevelIndex;
@@ -40,9 +41,11 @@ public:
 	int32 CurrentWaveIndex;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Level|Wave")
 	int32 MaxWaves;
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Level|Wave")
+	UDataTable* WaveDataTable;
 
 	// 매 레벨이 끝나기 전까지 시간이 흐르도록 관리하는 타이머
-	FTimerHandle LevelTimerHandle;
+	FTimerHandle WaveTimerHandle;
 	FTimerHandle HUDUpdateTimerHandle;
 
 	UFUNCTION(BlueprintPure, Category = "Score")
@@ -55,11 +58,13 @@ public:
 
 	// 레벨을 시작할 때, 아이템 스폰 및 타이머 설정
 	void StartLevel();
+	void StartWave();
 	// 레벨 제한 시간이 만료되었을 때 호출
-	void OnLevelTimeUp();
+	void OnWaveTimeUp();
 	// 코인을 주웠을 때 호출
 	void OnCoinCollected();
 	// 레벨을 강제 종료하고 다음 레벨로 이동
 	void EndLevel();
+	void EndWave();
 	void UpdateHUD();
 };
