@@ -90,10 +90,10 @@ ACoinItem::~ACoinItem() {}
 struct Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_CoinItem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ACoinItem, ACoinItem::StaticClass, TEXT("ACoinItem"), &Z_Registration_Info_UClass_ACoinItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACoinItem), 1403314609U) },
+		{ Z_Construct_UClass_ACoinItem, ACoinItem::StaticClass, TEXT("ACoinItem"), &Z_Registration_Info_UClass_ACoinItem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ACoinItem), 219329134U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_CoinItem_h_3106079649(TEXT("/Script/Task8"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_CoinItem_h_3889912818(TEXT("/Script/Task8"),
 	Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_CoinItem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_CoinItem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

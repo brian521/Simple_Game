@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\source\\task8\\private\\itemspawnrow.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\x64\\task8editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\task8\\definitions.task8.h",
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\source\\task8\\public\\itemspawnrow.h",
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\unrealeditor\\inc\\task8\\uht\\itemspawnrow.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

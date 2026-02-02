@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Task8ModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f1d3dbda6cf675bc2093c6802282c9ffcac2a5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc0567386dd998c0beb68a67a779ac9dd7430d6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Task8ModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Task8ModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

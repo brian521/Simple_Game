@@ -9,10 +9,18 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UUserWidget;
 #ifdef TASK8_SpartaPlayerController_generated_h
 #error "SpartaPlayerController.generated.h already included, missing '#pragma once' in SpartaPlayerController.h"
 #endif
 #define TASK8_SpartaPlayerController_generated_h
+
+#define FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaPlayerController_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execStartGame); \
+	DECLARE_FUNCTION(execShowMainMenu); \
+	DECLARE_FUNCTION(execShowGameHUD); \
+	DECLARE_FUNCTION(execGetHUDWidget);
+
 
 #define FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaPlayerController_h_18_INCLASS_NO_PURE_DECLS \
 private: \
@@ -39,6 +47,7 @@ public: \
 #define FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaPlayerController_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaPlayerController_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaPlayerController_h_18_INCLASS_NO_PURE_DECLS \
 	FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaPlayerController_h_18_ENHANCED_CONSTRUCTORS \
 private: \

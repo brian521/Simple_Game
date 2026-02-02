@@ -57,6 +57,9 @@
     <ClCompile Include="..\..\Source\Task8\Private\ItemInterface.cpp">
       <Filter>Source\Task8\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\ItemSpawnRow.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Task8\Private\MineItem.cpp">
       <Filter>Source\Task8\Private</Filter>
     </ClCompile>
@@ -66,10 +69,19 @@
     <ClCompile Include="..\..\Source\Task8\Private\SpartaCharacter.cpp">
       <Filter>Source\Task8\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\SpartaGameInstance.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Task8\Private\SpartaGameMode.cpp">
       <Filter>Source\Task8\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\SpartaGameState.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Task8\Private\SpartaPlayerController.cpp">
+      <Filter>Source\Task8\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Private\SpawnVolume.cpp">
       <Filter>Source\Task8\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Task8\Public">
@@ -90,6 +102,9 @@
     <ClCompile Include="..\..\Source\Task8\Public\ItemInterface.h">
       <Filter>Source\Task8\Public</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\ItemSpawnRow.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Task8\Public\MineItem.h">
       <Filter>Source\Task8\Public</Filter>
     </ClCompile>
@@ -99,10 +114,19 @@
     <ClCompile Include="..\..\Source\Task8\Public\SpartaCharacter.h">
       <Filter>Source\Task8\Public</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\SpartaGameInstance.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Task8\Public\SpartaGameMode.h">
       <Filter>Source\Task8\Public</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\SpartaGameState.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Task8\Public\SpartaPlayerController.h">
+      <Filter>Source\Task8\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Task8\Public\SpawnVolume.h">
       <Filter>Source\Task8\Public</Filter>
     </ClCompile>
   </ItemGroup>

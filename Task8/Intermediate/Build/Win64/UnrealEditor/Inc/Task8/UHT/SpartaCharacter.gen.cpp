@@ -17,8 +17,94 @@ ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 ENHANCEDINPUT_API UScriptStruct* Z_Construct_UScriptStruct_FInputActionValue();
 TASK8_API UClass* Z_Construct_UClass_ASpartaCharacter();
 TASK8_API UClass* Z_Construct_UClass_ASpartaCharacter_NoRegister();
+UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Task8();
 // End Cross Module References
+
+// Begin Class ASpartaCharacter Function AddHealth
+struct Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics
+{
+	struct SpartaCharacter_eventAddHealth_Parms
+	{
+		float Amount;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+		{ "ModuleRelativePath", "Public/SpartaCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Amount;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::NewProp_Amount = { "Amount", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SpartaCharacter_eventAddHealth_Parms, Amount), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::NewProp_Amount,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASpartaCharacter, nullptr, "AddHealth", nullptr, nullptr, Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::SpartaCharacter_eventAddHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::SpartaCharacter_eventAddHealth_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ASpartaCharacter_AddHealth()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASpartaCharacter_AddHealth_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ASpartaCharacter::execAddHealth)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Amount);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->AddHealth(Z_Param_Amount);
+	P_NATIVE_END;
+}
+// End Class ASpartaCharacter Function AddHealth
+
+// Begin Class ASpartaCharacter Function GetHealth
+struct Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics
+{
+	struct SpartaCharacter_eventGetHealth_Parms
+	{
+		int32 ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+		{ "ModuleRelativePath", "Public/SpartaCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SpartaCharacter_eventGetHealth_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASpartaCharacter, nullptr, "GetHealth", nullptr, nullptr, Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::PropPointers), sizeof(Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::SpartaCharacter_eventGetHealth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::SpartaCharacter_eventGetHealth_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ASpartaCharacter_GetHealth()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASpartaCharacter_GetHealth_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ASpartaCharacter::execGetHealth)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(int32*)Z_Param__Result=P_THIS->GetHealth();
+	P_NATIVE_END;
+}
+// End Class ASpartaCharacter Function GetHealth
 
 // Begin Class ASpartaCharacter Function Look
 struct Z_Construct_UFunction_ASpartaCharacter_Look_Statics
@@ -109,6 +195,36 @@ DEFINE_FUNCTION(ASpartaCharacter::execMove)
 	P_NATIVE_END;
 }
 // End Class ASpartaCharacter Function Move
+
+// Begin Class ASpartaCharacter Function OnDeath
+struct Z_Construct_UFunction_ASpartaCharacter_OnDeath_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Health" },
+		{ "ModuleRelativePath", "Public/SpartaCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASpartaCharacter_OnDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASpartaCharacter, nullptr, "OnDeath", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASpartaCharacter_OnDeath_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASpartaCharacter_OnDeath_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_ASpartaCharacter_OnDeath()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASpartaCharacter_OnDeath_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ASpartaCharacter::execOnDeath)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnDeath();
+	P_NATIVE_END;
+}
+// End Class ASpartaCharacter Function OnDeath
 
 // Begin Class ASpartaCharacter Function StartJump
 struct Z_Construct_UFunction_ASpartaCharacter_StartJump_Statics
@@ -295,8 +411,11 @@ void ASpartaCharacter::StaticRegisterNativesASpartaCharacter()
 {
 	UClass* Class = ASpartaCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "AddHealth", &ASpartaCharacter::execAddHealth },
+		{ "GetHealth", &ASpartaCharacter::execGetHealth },
 		{ "Look", &ASpartaCharacter::execLook },
 		{ "Move", &ASpartaCharacter::execMove },
+		{ "OnDeath", &ASpartaCharacter::execOnDeath },
 		{ "StartJump", &ASpartaCharacter::execStartJump },
 		{ "StartSprint", &ASpartaCharacter::execStartSprint },
 		{ "StopJump", &ASpartaCharacter::execStopJump },
@@ -339,47 +458,33 @@ struct Z_Construct_UClass_ASpartaCharacter_Statics
 		{ "ToolTip", "\xec\xb9\xb4\xeb\xa9\x94\xeb\x9d\xbc \xec\xbb\xb4\xed\x8f\xac\xeb\x84\x8c\xed\x8a\xb8" },
 #endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NormalSpeed_MetaData[] = {
-		{ "Category", "Movement" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// \xec\x9d\xb4\xeb\x8f\x99 \xec\x86\x8d\xeb\x8f\x84 \xea\xb4\x80\xeb\xa0\xa8 \xed\x94\x84\xeb\xa1\x9c\xed\x8d\xbc\xed\x8b\xb0\xeb\x93\xa4\n" },
-#endif
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OverheadWidget_MetaData[] = {
+		{ "Category", "UI" },
+		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/SpartaCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "\xec\x9d\xb4\xeb\x8f\x99 \xec\x86\x8d\xeb\x8f\x84 \xea\xb4\x80\xeb\xa0\xa8 \xed\x94\x84\xeb\xa1\x9c\xed\x8d\xbc\xed\x8b\xb0\xeb\x93\xa4" },
-#endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SprintSpeedMultiplier_MetaData[] = {
-		{ "Category", "Movement" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// \xea\xb8\xb0\xeb\xb3\xb8 \xea\xb1\xb7\xea\xb8\xb0 \xec\x86\x8d\xeb\x8f\x84\n" },
-#endif
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxHealth_MetaData[] = {
+		{ "Category", "Health" },
 		{ "ModuleRelativePath", "Public/SpartaCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "\xea\xb8\xb0\xeb\xb3\xb8 \xea\xb1\xb7\xea\xb8\xb0 \xec\x86\x8d\xeb\x8f\x84" },
-#endif
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SprintSpeed_MetaData[] = {
-		{ "Category", "Movement" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "// \"\xea\xb8\xb0\xeb\xb3\xb8 \xec\x86\x8d\xeb\x8f\x84\" \xeb\x8c\x80\xeb\xb9\x84 \xeb\xaa\x87 \xeb\xb0\xb0\xeb\xa1\x9c \xeb\xb9\xa0\xeb\xa5\xb4\xea\xb2\x8c \xeb\x8b\xac\xeb\xa6\xb4\xec\xa7\x80 \xea\xb2\xb0\xec\xa0\x95\n" },
-#endif
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Health_MetaData[] = {
+		{ "Category", "Health" },
 		{ "ModuleRelativePath", "Public/SpartaCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "\"\xea\xb8\xb0\xeb\xb3\xb8 \xec\x86\x8d\xeb\x8f\x84\" \xeb\x8c\x80\xeb\xb9\x84 \xeb\xaa\x87 \xeb\xb0\xb0\xeb\xa1\x9c \xeb\xb9\xa0\xeb\xa5\xb4\xea\xb2\x8c \xeb\x8b\xac\xeb\xa6\xb4\xec\xa7\x80 \xea\xb2\xb0\xec\xa0\x95" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SpringArmComp;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraComp;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_NormalSpeed;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_SprintSpeedMultiplier;
-	static const UECodeGen_Private::FFloatPropertyParams NewProp_SprintSpeed;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_OverheadWidget;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxHealth;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Health;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_ASpartaCharacter_AddHealth, "AddHealth" }, // 3580956541
+		{ &Z_Construct_UFunction_ASpartaCharacter_GetHealth, "GetHealth" }, // 3902533272
 		{ &Z_Construct_UFunction_ASpartaCharacter_Look, "Look" }, // 1680129857
 		{ &Z_Construct_UFunction_ASpartaCharacter_Move, "Move" }, // 1866282562
+		{ &Z_Construct_UFunction_ASpartaCharacter_OnDeath, "OnDeath" }, // 349503244
 		{ &Z_Construct_UFunction_ASpartaCharacter_StartJump, "StartJump" }, // 3397102948
 		{ &Z_Construct_UFunction_ASpartaCharacter_StartSprint, "StartSprint" }, // 3724542354
 		{ &Z_Construct_UFunction_ASpartaCharacter_StopJump, "StopJump" }, // 1721884577
@@ -391,17 +496,17 @@ struct Z_Construct_UClass_ASpartaCharacter_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_SpringArmComp = { "SpringArmComp", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, SpringArmComp), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpringArmComp_MetaData), NewProp_SpringArmComp_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_CameraComp = { "CameraComp", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, CameraComp), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraComp_MetaData), NewProp_CameraComp_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_NormalSpeed = { "NormalSpeed", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, NormalSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NormalSpeed_MetaData), NewProp_NormalSpeed_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_SprintSpeedMultiplier = { "SprintSpeedMultiplier", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, SprintSpeedMultiplier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SprintSpeedMultiplier_MetaData), NewProp_SprintSpeedMultiplier_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_SprintSpeed = { "SprintSpeed", nullptr, (EPropertyFlags)0x0020080000020015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, SprintSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SprintSpeed_MetaData), NewProp_SprintSpeed_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_SpringArmComp = { "SpringArmComp", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, SpringArmComp), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpringArmComp_MetaData), NewProp_SpringArmComp_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_CameraComp = { "CameraComp", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, CameraComp), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraComp_MetaData), NewProp_CameraComp_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_OverheadWidget = { "OverheadWidget", nullptr, (EPropertyFlags)0x001000000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, OverheadWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverheadWidget_MetaData), NewProp_OverheadWidget_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_MaxHealth = { "MaxHealth", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, MaxHealth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealth_MetaData), NewProp_MaxHealth_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_Health = { "Health", nullptr, (EPropertyFlags)0x0020080000020005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpartaCharacter, Health), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Health_MetaData), NewProp_Health_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpartaCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_SpringArmComp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_CameraComp,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_NormalSpeed,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_SprintSpeedMultiplier,
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_SprintSpeed,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_OverheadWidget,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_MaxHealth,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpartaCharacter_Statics::NewProp_Health,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ASpartaCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ASpartaCharacter_Statics::DependentSingletons[])() = {
@@ -444,10 +549,10 @@ ASpartaCharacter::~ASpartaCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpartaCharacter, ASpartaCharacter::StaticClass, TEXT("ASpartaCharacter"), &Z_Registration_Info_UClass_ASpartaCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpartaCharacter), 3572255263U) },
+		{ Z_Construct_UClass_ASpartaCharacter, ASpartaCharacter::StaticClass, TEXT("ASpartaCharacter"), &Z_Registration_Info_UClass_ASpartaCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpartaCharacter), 3261825047U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_34447923(TEXT("/Script/Task8"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_4132134017(TEXT("/Script/Task8"),
 	Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_user_Desktop_NBC_Simple_Game_Task8_Source_Task8_Public_SpartaCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

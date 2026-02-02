@@ -26,7 +26,13 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
             "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\unrealeditor\\inc\\task8\\uht\\spartacharacter.generated.h",
             "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\source\\task8\\public\\spartaplayercontroller.h",
-            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\unrealeditor\\inc\\task8\\uht\\spartaplayercontroller.generated.h"
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\unrealeditor\\inc\\task8\\uht\\spartaplayercontroller.generated.h",
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\source\\task8\\public\\spartagamestate.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestate.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestatebase.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestatebase.generated.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestate.generated.h",
+            "c:\\users\\user\\desktop\\nbc\\simple_game\\task8\\intermediate\\build\\win64\\unrealeditor\\inc\\task8\\uht\\spartagamestate.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
