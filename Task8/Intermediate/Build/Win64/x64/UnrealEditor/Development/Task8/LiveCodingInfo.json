@@ -10,11 +10,13 @@
 			"ItemSpawnRow.gen.cpp.obj",
 			"MineItem.gen.cpp.obj",
 			"SmallCoinItem.gen.cpp.obj",
+			"SpartaCharacter.gen.cpp.obj",
 			"SpartaGameInstance.gen.cpp.obj",
 			"SpartaGameMode.gen.cpp.obj",
 			"SpartaGameState.gen.cpp.obj",
 			"SpartaPlayerController.gen.cpp.obj",
 			"SpawnVolume.gen.cpp.obj",
+			"Task8.init.gen.cpp.obj",
 			"WaveDataRow.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"BaseItem.cpp.obj",
@@ -23,18 +25,16 @@
 			"HealingItem.cpp.obj",
 			"ItemInterface.cpp.obj",
 			"ItemSpawnRow.cpp.obj",
+			"MineItem.cpp.obj",
 			"SmallCoinItem.cpp.obj",
+			"SpartaCharacter.cpp.obj",
 			"SpartaGameInstance.cpp.obj",
 			"SpartaGameMode.cpp.obj",
 			"SpartaGameState.cpp.obj",
+			"SpartaPlayerController.cpp.obj",
 			"SpawnVolume.cpp.obj",
 			"WaveDataRow.cpp.obj",
-			"Task8.cpp.obj",
-			"SpartaCharacter.gen.cpp.obj",
-			"Task8.init.gen.cpp.obj",
-			"MineItem.cpp.obj",
-			"SpartaCharacter.cpp.obj",
-			"SpartaPlayerController.cpp.obj"
+			"Task8.cpp.obj"
 		]
 	}
 }
